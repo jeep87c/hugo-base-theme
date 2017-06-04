@@ -21,6 +21,8 @@ body {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
+    background: inherit;
+    background-attachment: fixed;
 }
 
 
@@ -39,12 +41,47 @@ body {
     background-size: cover;
     z-index: 99999;
     background-color: black;
+    overflow: hidden;
 }
 
 .logo {
     max-width: 35em;
     width: 100%;
     padding: 2em;
+}
+
+.textUnderLogo {
+    position: relative;
+    padding: 20px 20px;
+    background: inherit;
+    background-attachment: fixed;
+}
+
+.textUnderLogo > p {
+    margin: 0;
+    color: white;
+    position: relative;
+    z-index: 1;
+    font-size: x-large;
+    white-space:pre-wrap;
+}
+
+.textUnderLogo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    background-attachment: fixed;
+    -webkit-filter: blur(18px);
+    filter: blur(18px);
+}
+
+.textUnderLogo::after {
+    background: inherit;
+    background-attachment: fixed;
 }
 
 .buttonbox {
