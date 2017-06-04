@@ -149,7 +149,6 @@ and (orientation : landscape) {
     color: #ffffff;
 }
 
-
 .point h2, .counterpoint h2 {
     font-size: 32pt;
     line-height: 1.7;
@@ -191,12 +190,6 @@ i.point-icon:hover {
 
 a:hover {
     color: rgb(52, 73, 94);
-}
-
-
-
-.icon-2x {
-    font-size: 200%;
 }
 
 /* Callout */
